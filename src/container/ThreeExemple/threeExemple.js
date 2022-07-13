@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import Box from '../../components/Box';
 
 // style
-import '../../styles/canvas.css';
+import '../../styles/Canvas/canvas.css';
 import AnimatedSphere from '../../components/AnimatedSphere';
 
 const ThreeExemple = () => { 

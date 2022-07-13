@@ -1,10 +1,8 @@
 import React from "react";
 import { useThree } from "react-three-fiber"
-import { MeshDistortMaterial, Sphere, TransformControls } from "@react-three/drei";
+import { MeshDistortMaterial, Sphere } from "@react-three/drei";
 import { useGesture } from "react-use-gesture"
 import { useSpring, a } from "@react-spring/three"
-
-
 
 export default function AnimatedSphere() {
   const { size, viewport } = useThree()
@@ -16,7 +14,7 @@ export default function AnimatedSphere() {
 
   return (
         <a.mesh {...spring} {...bind()} castShadow>
-            <Sphere visible args={[1, 50, 100]} scale={1}>   
+            <Sphere visible args={[1, 50, 100]} scale={.5}>   
                 {/* <OrbitControls makeDefault /> */}
                 <MeshDistortMaterial
                     color="#fafafa"
